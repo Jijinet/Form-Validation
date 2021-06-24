@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p class="small-title">Register for</p>
+    <h1 class="title">Full Stack Conf</h1>
+
+
+    <form onsubmit="return false;">
+
+        <div class="infos basic">
+            <h3>Basic Infos</h3>
+            <div class="inputs">
+                <label for="">Nom:</label> <br>
+                <span>This field must contains at least 2 characters</span>
+                <input type="text">
+                <br>
+                <label for="">Email:</label> <br>
+                <span>Please enter a valid email</span>
+                <input type="text">
+                <br>
+            </div>
+            <label for="">Job Role:</label>
+            <span>Please select a job title</span>
+            <select class="job-role">
+
+                <option value="">Please,select a job role</option>
+                <option value="full">Full Stack Javascript Develeoper</option>
+                <option value="front">Front End Developer</option>
+                <option value="back">Back End Developer</option>
+                <option value="designer">Designer</option>
+                <option value="student">Student</option>
+
+                <option value="other">Other</option>
+
+            </select>
+            <div class="ui-widget">
+                <input type="text" class="job-input" placeholder="Your Job Role">
+            </div>
+        </div>
+
+        <div class="infos shirt">
+
+            <h3>T-Shirt Info</h3>
+
+            <div class="selects">
+                <label for="">Size:</label>
+                <select>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+
+                <label for="">Design:</label>
+                <span>Please select a design theme</span>
+                <select class="design">
+                    <option value="">Select Theme</option>
+                    <option value="js-puns">Theme - JS Puns</option>
+                    <option value="js">Theme - |♥ JS</option>
+                </select>
+
+                <div class="color-div"><label for="">Color:</label>
+                    <span>Please select a color</span>
+                    <select class="color">
+                        <option value="">Please,select a T-shirt color theme</option>
+                        <option value="js-puns">Cornflower Blue(JS Pnus shirt only)</option>
+                        <option value="js-puns">Dark State Grey (JS Pnus shirt only)</option>
+                        <option value="js-puns">Gold (JS Pnus shirt only)</option>
+                        <option value="js">Tomato(I ♥ JS shirt only)</option>
+                        <option value="js">Steel Blue (I ♥ JS shirt only)</option>
+                        <option value="js">Dim Grey (I ♥ JS shirt only)</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="infos activities">
+
+            <h3 class="activities-title">Register for Activities</h3>
+            <span>Please check at least one activity</span>
+            <label for=""><input type="checkbox" name="price[]" class="main" value="200">Main Conference--200$</label>
+            <label for=""><input type="checkbox" name="price[]" class="th-1" value="100">Javascript Frameworks
+                Workshop--Tuesday
+                9am-12pm,100$</label>
+            <label for=""><input type="checkbox" name="price[]" class="th-2" value="100">Javascript Libraries
+                Workshop--Tuesday
+                1am-4pm,100$</label>
+            <label for=""><input type="checkbox" name="price[]" class="th-3" value="100">Express Workshop--Tuesday
+                9am-12pm,100$</label>
+            <label for=""><input type="checkbox" name="price[]" class="th-4" value="100">Node.js Workshop--Tuesday
+                1pm-4pm;100$</label>
+            <label for=""><input type="checkbox" name="price[]" class="wd-1" value="100">Build tools Workshop--Wednesday
+                9am-12pm,100$</label>
+            <label for=""><input type="checkbox" name="price[]" class="wd-2" value="100">npm Workshop--Wednesday
+                1pm-4pm,100$</label>
+            <p class="price"></p>
+        </div>
+
+        <div class="infos payment">
+            <h3>Payment Infos</h3>
+
+            <label for="">I'm going to pay with:</label><br><br>
+            <span>Please select a payment method</span>
+            <select class="payement-method">
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">Paypal</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+            <p class="payment-msg"></p>
+            <div class="credit-card-infos">
+                <div class="inputs">
+                    <label for="">Card Number:</label> <br>
+                    <span>Please enter a valid card Num</span>
+                    <input type="text">
+                    <br>
+                    <label for="">Zip Code:</label> <br>
+                    <span>Please enter a valid zip code</span>
+                    <input type="text">
+                    <br>
+                    <label for="">CVV</label> <br>
+                    <span>Please enter a valid CVV</span>
+                    <input type="text">
+
+                    <br>
+                </div>
+
+                <div class="selects">
+                    <label for="">Expiration Date:</label>
+                    <span>Please select a month</span>
+                    <select class="month">
+                        <option value="">Month</option>
+                    </select>
+
+                    <label for="">Expiration Year:</label>
+
+                    <span>Please select an expiration year</span>
+                    <select class="year">
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button class="register">Register</button>
+
+    </form>
+
+
+
+
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="formValidation.js"></script>
+
+
+
+</body>
+
+</html>
